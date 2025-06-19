@@ -1,0 +1,30 @@
+{
+  "name": "dotenv-cli-global",
+  "version": "0.0.1",
+  "author": "Nathan Baker <pcnate@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/dotenv-cli-global.js",
+    "test": "tsc && jest",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.0.3",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0",
+    "semantic-release": "^23.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/lib/**/*.test.js"
+    ],
+    "transform": {},
+    "extensionsToTreatAsEsm": [],
+    "moduleNameMapper": {},
+    "moduleFileExtensions": ["js", "json", "node"],
+    "testEnvironment": "node"
+  }
+}
